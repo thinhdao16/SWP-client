@@ -14,10 +14,12 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -33,9 +35,10 @@
 </head>
 
 <body>
-    <div class="container-xxl bg-white p-0">
+    <div class="container-fluid bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -43,46 +46,29 @@
         <!-- Spinner End -->
 
         <!-- Header Start -->
-        <div class="container-fluid bg-dark px-0">
+        <div class="container-fluid container-fluid-header bg-dark px-0">
+            <!--chỉnh container thành container-fluid-->
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <a href="index.html"
+                        class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                         <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
                     </a>
                 </div>
                 <div class="col-lg-9">
-                    <div class="row gx-0 bg-white d-none d-lg-flex">
-                        <div class="col-lg-7 px-5 text-start">
-                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                                <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
-                            </div>
-                            <div class="h-100 d-inline-flex align-items-center py-2">
-                                <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+012 345 6789</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 px-5 text-end">
-                            <div class="d-inline-flex align-items-center py-2">
-                                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="" href=""><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                    </div>
+
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                         <a href="index.html" class="navbar-brand d-block d-lg-none">
                             <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
                         </a>
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link">Home</a>
-                                <a href="about.html" class="nav-item nav-link active">About</a>
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
                                 <a href="service.html" class="nav-item nav-link">Services</a>
                                 <a href="room.html" class="nav-item nav-link">Rooms</a>
                                 <div class="nav-item dropdown">
@@ -95,7 +81,18 @@
                                 </div>
                                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
-                            <a href="https://htmlcodex.com/hotel-html-template-pro" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i class="fa fa-arrow-right ms-3"></i></a>
+                            <!--thêm dropdown-->
+                            <div class="nav-item dropdown pe-5">
+                                <a href="#" class="nav-link dropdown-toggle text-f-login my-dropdown-toggle "
+                                    data-bs-toggle="dropdown">DAO DUC THINH(K15 HCM)</a>
+                                <div class="dropdown-menu dropdown-menu-chang">
+                                    <label for="text" class=" title-drop-login"> Purchase</label>
+                                    <a href="booking.html" class="dropdown-item text-secondary">Settings</a>
+                                    <a href="team.html" class="dropdown-item text-secondary">Log out</a>
+
+                                </div>
+                            </div>
+                            <!--end-->
                         </div>
                     </nav>
                 </div>
@@ -104,292 +101,354 @@
         <!-- Header End -->
 
 
+
         <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
-            <div class="container-fluid page-header-inner py-5">
-                <div class="container text-center pb-5">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">About</li>
-                        </ol>
-                    </nav>
-                </div>
+        <div class="container-fluid page-header mb-5 p-0">
+            <div class="container-fluid page-header-inner pt-5">
             </div>
         </div>
         <!-- Page Header End -->
-
-
-        <!-- Booking Start -->
-        <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container-fluid about-container-fluid-desc">
+            <div class="container text-center about-location-txt">
+                <h1 class="text-uppercase"> about us</h1>
+                <div class="text-center about-hr">
+                    <hr>
+                </div>
+                <h5 class="mt-5">
+                    For more than the last three years, Luxcity Hotel & Apartment has been recognized as one of the very
+                    best places to stay.
+                </h5>
+                <h5>
+                    Luxcity Hotel & Apartment is a 4-star building located by Phnom Penh Megamall (under construction)
+                    as
+                    well as cafés, bars and restaurants. Secured, quiet suitable for high-ranking officials. The
+                    building is
+                    from Phnom Penh city centre 2 km. The building is also near Eden Garden, Khalendale, TK Avenue,
+                    Independence Monument 2.7 km, Bophana Audiovisual Resource Center 1.7 km & Central Mall Phnom Penh
+                    1.4
+                    km, Royal Palace/National Museum. It's also convenient to travel to Phnom Penh airport
+                </h5>
+                <h5>
+                    Luxcity Hotel & Apartment offers a wide range of services by friendly and professional associates
+                    who
+                    embody Cambodian traditional hospitality combined with international standards.
+                </h5>
+                <h5>
+                    All of classic rooms are provided you with all emenities. Each unit also features an electric
+                    kettle,
+                    coffee/tea making facilities and kitchenware. Begin a day with continental breakfast. The local
+                    dishes
+                    are served in the gastronomic restaurant. You will find Mike's Burger House, Ho Kee Bak Kut Teh and
+                    Vinissimo offering the meals nearby. Luxcity Hotel & Apartment is only a short distance from PP
+                    train
+                    station.
+                </h5>
+                <div class="row mb-5">
+                    <div class="col-lg-3">
+                        <img src="https://luxcity.com/LuxCity/img/index/Lobby1.jpg" alt="Lobby">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="https://luxcity.com/LuxCity/img/index/Level23.jpg" alt="Level23">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="https://luxcity.com/LuxCity/img/index/Restaurant1.jpg" alt="Restaurant">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="https://luxcity.com/LuxCity/img/index/Function-Room.jpg" alt="Function-Room">
+                    </div>
+                </div>
+            </div>
             <div class="container">
-                <div class="bg-white shadow" style="padding: 35px;">
-                    <div class="row g-2">
-                        <div class="col-md-10">
-                            <div class="row g-2">
-                                <div class="col-md-3">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Adult</option>
-                                        <option value="1">Adult 1</option>
-                                        <option value="2">Adult 2</option>
-                                        <option value="3">Adult 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Child</option>
-                                        <option value="1">Child 1</option>
-                                        <option value="2">Child 2</option>
-                                        <option value="3">Child 3</option>
-                                    </select>
-                                </div>
-                            </div>
+                <div class="text-center about-why-tit">
+                    <label for="text">
+                        Why You Choose Our Hotel & Resort Form the All of the Other's
+                    </label>
+                </div>
+                <div class="row about-why-desc-more">
+                    <div class="col-lg-4 ">
+                        <div class="card-body p-4">
+                            <i class="fa-thin fa-utensils"></i>
+                            <label for="text" class="d-block">Restaurant
+                                Facilities</label>
+                            <p>We are
+                                one of the best company in the global market and we have restaurant facilities for all
+                                of our guide</p>
                         </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card-body p-4">
+                            <i class="fa-solid fa-rss"></i>
+                            <label for="text" class="d-block">Free Wifi
+                                Facilities</label>
+                            <p>This
+                                is the place where I will get a free wifi zone at a reasonable price and this will help
+                                you to make a colorful life</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card-body p-4">
+                            <i class="fa-thin fa-crown"></i>
+                            <label for="text" class="d-block">5 Stars
+                                Rettings</label>
+                            <p>Atoli
+                                is well known agency and the agency is one of the best by 5-star retting and we will be
+                                benefited congratulations you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-why-desc-more" style="margin-top: -21px;">
+                    <div class="col-lg-4 ">
+                        <div class="card-body p-4">
+                            <i class="fa-thin fa-water-ladder"></i>
+                            <label for="text" class="d-block">Premium
+                                Pool</label>
+                            <p>Choose
+                                from 4 unique ready made concepts, let us help you create the concept perfect for you or
+                                let HCA.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card-body p-4">
+                            <i class="fa-thin fa-tv"></i>
+                            <label for="text" class="d-block">TV
+                                HD</label>
+                            <p>We
+                                provide a critical analysis of a hotel's marketing strategy, bench-marking it against
+                                industry and competitive practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card-body p-4">
+                            <i class="fa-thin fa-wine-glass-empty"></i>
+                            <label for="text" class="d-block">Bar
+                                Wine</label>
+                            <p>For
+                                properties with third party management companies, HCA Consultants will as well
+                                administer the terms and conditions.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Booking End -->
 
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelier</span></h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <div class="row g-3 pb-4">
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Rooms</p>
+            <div class="container-xxl py-5 my-5">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="index-text-font">
+                                <h1>Our Ability to the Global and International Market</h1>
+                                <label for="text" class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed tincidunt ante tellus, sit amet rhoncus massa aliquam sit amet. Cras porttitor
+                                    mauris quis mattis ornare. In efficitur at sem quis pretium. Aenean sit amet neque
+                                    ut dolor lacinia rutrum. In vulputate pellentesque turpis et porta.</label>
+                            </div>
+                            <div class="row g-3 pb-4 about-icon-more">
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="shadow p-4 text-center">
+                                        <label for="text" class="d-block text-primary">14K</label>
+                                        <span for="text" class="d-block">5 Start Retting Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="shadow p-4 text-center">
+                                        <label for="text" class="d-block text-primary">225K</label>
+                                        <span for="text" class="d-block">Items Served Breakfast</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Staffs</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Clients</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg" style="margin-top: 25%;">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
 
-
-        <!-- Team Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
-                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="rounded shadow overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-1.jpg" alt="">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="rounded shadow overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-2.jpg" alt="">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="rounded shadow overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-3.jpg" alt="">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="rounded shadow overflow-hidden">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-4.jpg" alt="">
-                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                        <div class="col-lg-6">
+                            <div class="d-block index-img-abt">
+                                <img class="index-img-abt-jpg-1"
+                                    src="https://templates.hibootstrap.com/atoli/default/assets/img/ability-img2.jpg"
+                                    alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Team End -->
-
-
-        <!-- Newsletter Start -->
-        <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 border rounded p-1">
-                    <div class="border rounded text-center p-1">
-                        <div class="bg-white rounded text-center p-5">
-                            <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
-                            <div class="position-relative mx-auto" style="max-width: 400px;">
-                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
-                            </div>
-                        </div>
+            <div class="container about-rule">
+                <div class="text-center mt-5">
+                    <h1 class="text-uppercase">hotel rule</h1>
+                    <div class="text-center about-hr">
+                        <hr>
                     </div>
+
+                </div>
+                <label for="text" class="d-block">
+                    <h5>1. Check-in from 2:00 pm - Check out up to 12:00 pm</h5>
+                </label>
+                <label for="text" class="d-block">
+                    <h5>2. Cancellation policy:</h5>
+                    <p class="d-block">+ Any cancellation received within 1 day prior to arrival date will
+                        incur the first
+                        night charge. Failure to arrive at the hotel will be treated as a No-Show and no refund will be
+                        given.</p>
+                    <p>+ Cancellation and prepayment policies vary according to accommodations type. Check
+                        what conditions might apply to each option when making your selection.</p>
+                </label>
+                <label for="text" class="d-block">
+                    <h5> 3. Children & Beds</h5>
+                    <p> + Children 13 years old and above are considered adults at this building. </p>
+                    <p> + 0+ years (Extra bed by request) => US$30 per person, per night</p>
+                    <p> + Sub-charge shall not be automatically applied in the total cost and shall be paid separately
+                        during your stay.</p>
+                    <p> + The maximum number of allowed extra beds depends on the room you choose. Double-check the
+                        maximum
+                        capacity for the room you selected.</p>
+                    <p>+ All cribs and extra beds are subject to availability.</p>
+                </label>
+                <label for="text" class="d-block">
+                    <h5>4. Pets</h5>
+                    <p class="d-block">Pets are not allowed.</p>
+                </label>
+                <label for="text">
+                    <h5> 5. Cards accepted at this hotel</h5>
+                    <p>Luxcity Hotel & Apartment accepts these cards and reserves the right to temporarily
+                        hold a sum prior to arrival. (Visa, Master & UnionPay)
+                    </p>
+                </label>
+                <label for="text" class="d-block">
+                    <h5> 6. Smoke-Free Policy</h5>
+                    <p class="d-block">
+                        Luxcity Hotel & Apartment is a smoke-free environment.
+                    </p>
+                </label>
+                <label for="text" class="d-block">
+                    <h5> 7. Others:</h5>
+                    <p> + Guests are required to show a photo of national identification card and credit card upon
+                        check-in.</p>
+
+                    <p> + Please note that all Special Requests are subject to availability and additional charges may
+                        apply. Please inform Luxcity Hotel & Apartment before your expected arrival time.</p>
+
+                    <p> + You can use the Special Request box when booking, or in person contacting the building with
+                        the
+                        contact details provided in your confirmation.</p>
+
+                    <p> + To fight Coronavirus (COVID-19), additional safety and sanitation measures are in effect at
+                        this
+                        building. During period of Coronavirus (COVID-19), this building is taking steps to help
+                        securing
+                        its guests and staffs. Certain services and amenities may be reduced or unavailable as a result.
+                    </p>
+
+                    <p> + Luxcity Hotel & Apartment shall not be liable for the guest/s and/or the other occupants'
+                        money,
+                        jewelry or other valuable belongings and shall not be liable for any loss or damages suffered by
+                        the
+                        guest/s and/or the other occupants in their rooms however caused in the use of the in-room safe,
+                        and
+                        without limiting the generality of the foregoing, whether caused or arising by reasons of or on
+                        account of any failure, defect or malfunction of the safe or by reason of any act or omission
+                        whether on the part of the hotel or its servants or agents.</p>
+
+                    <p> + Guests are under the legal adult age of 18 years must show the written proof that they're the
+                        legal guardians or parents of such person or visitor. The Hotel reserves the right to remove
+                        such
+                        person or visitor from the hotel at any time should guest fails to provide the appropriate proof
+                        as
+                        required.</p>
+
+                </label>
+            </div>
+
+            <div class="container my-5">
+                <div class="text-center about-ttl about-hr">
+                    <h1>FAQs </h1>
+                    <label for="text">(Frequently Asked Questions) About Luxcity Hotel & Apartment</label>
+                    <hr>
+                </div>
+                <div class="my-5 about-faq-chg">
+                    <dl>
+                        <dt>1. Which is the closest airport from Luxcity Hotel &amp; Apartment?</dt>
+                        <dd>The closest airport is also convenient to travel to Phnom Penh airport. </dd>
+                    </dl>
+                    <dl>
+                        <dt>2. Does Luxcity Hotel &amp; Apartment provide facilities for business travellers?</dt>
+                        <dd>Yes, The Luxcity Hotel &amp; Apartment Phnom Penh will cover your business needs with a
+                            xerox
+                            and a work desk.</dd>
+                    </dl>
+                    <dl>
+                        <dt>3. What is the distance between the city centre and Luxcity Hotel &amp; Apartment?</dt>
+                        <dd>Luxcity Hotel &amp; Apartment is in the very heart of Phnom Penh.</dd>
+                    </dl>
+                    <dl>
+                        <dt>4. Is Wi-Fi facility available at Luxcity Hotel &amp; Apartment?</dt>
+                        <dd>Yes, Luxcity Hotel &amp; Apartment in Phnom Penh provides all guests with Wi-Fi .</dd>
+                    </dl>
+                    <dl>
+                        <dt>5. Which popular attractions are near Luxcity Hotel &amp; Apartment?</dt>
+                        <dd>Popular spots near The Luxcity Hotel &amp; Apartment include Vattanac Capital, Al-Serkal
+                            Mosque,
+                            Wat Phnom, Eden Garden, Khalendale, TK Avenue, Independence Monument, Bophana Audiovisual
+                            Resource Center &amp; Central Mall Phnom Penh, Royal Palace/National Museum. It's also
+                            convenient to go to the Phnom Penh airport. </dd>
+                    </dl>
+                    <dl>
+                        <dt>6. Where can we find Luxcity Hotel &amp; Apartment?</dt>
+                        <dd>Luxcity Hotel &amp; Apartment is situated in Prampir Makara district, merely 1.9 km of
+                            Al-Serkal
+                            Mosque.</dd>
+                    </dl>
+                    <dl>
+                        <dt>7. What is the minimal price of a room in Luxcity Hotel &amp; Apartment?</dt>
+                        <dd>Room rate at Luxcity Hotel &amp; Apartment starts at $45.</dd>
+                    </dl>
+                    <dl>
+                        <dt>8. What key facilities are provided in Luxcity Hotel &amp; Apartment?</dt>
+                        <dd>The Luxcity Hotel &amp; Apartment provides one parking lot at automated car park, rooftop
+                            swimming pool, restaurant, gym, laundromat usage at level 1 and so on.</dd>
+                    </dl>
+                    <dl>
+                        <dt>9. Which amenities are offered in the rooms at Luxcity Hotel &amp; Apartment?</dt>
+                        <dd>The Luxcity Hotel &amp; Apartment includes electronic key card, LCD TV, Bedding non-feather
+                            pillows, multi-functional work desk, wardrobe, Telephone, Alarm clock, bluetooth music
+                            connection, iron / ironing board, individual climate control, socket, mini-bar, luxury
+                            bathroom
+                            amenities, sustainable bathroom amenities, hair dryer and so on.</dd>
+                    </dl>
+                    <dl>
+                        <dt>10. What room options does Luxcity Hotel &amp; Apartment provide?</dt>
+                        <dd>Room options at Luxcity Hotel &amp; Apartment are: Studio Queen, Studio Twin, Duplex
+                            Classic,
+                            Duplex Premium, Executive Resident, Duplex Suite, Sky Villa.</dd>
+                    </dl>
                 </div>
             </div>
+
         </div>
-        <!-- Newsletter Start -->
-        
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container pb-5">
+        <div class="container-fluid bg-dark text-light  wow fadeIn index-footer-container-fluid " data-wow-delay="0.1s">
+            <div class="container ">
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="bg-primary rounded p-4">
-                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">Hotelier</h1></a>
-                            <p class="text-white mb-0">
-								Download <a class="text-dark fw-medium" href="https://htmlcodex.com/hotel-html-template-pro">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.
-							</p>
-                        </div>
+                    <div class="col-lg-6 ft-label">
+                        <label for="text" >
+                            contact</label>
+                        <h1  class="d-block"> <i class="fa-solid fa-location-dot mx-2 text-primary"></i> Lô
+                            E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ,Quận 9, TP.HCM</h1>
+                        <h1 class="d-block"><i class="fa-solid fa-envelope mx-2 text-primary"></i>teamSWP@fpt.edu.vn</h1>
+                        <h1 class="d-block"><i class="fa-brands fa-facebook mx-2 text-primary"></i> chat with
+                            us:https://www.facebook.com/</h1>
+                        <h1 class="d-block"><i class="fa-solid fa-phone text-primary mx-2"></i>(+84) 564 565 562 - (+84) 952
+                            482 920</h1>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-sm-12 col-lg-6 text-center">
+                        <div class="ps-2 pt-2">
+                            <small class="fa fa-star "></small>
+                            <small class="fa fa-star "></small>
+                            <small class="fa fa-star"></small>
+                            <small class="fa fa-star "></small>
+                            <small class="fa fa-star"></small>
                         </div>
+                        <label for="text" class="fs-1 text-uppercase">
+                            Hotelier</label>
+                        <label for="text" class="d-block text-uppercase">hotel
+                            § Luxury</label>
                     </div>
-                    <div class="col-lg-5 col-md-12">
-                        <div class="row gy-5 g-4">
-                            <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-                                <a class="btn btn-link" href="">About Us</a>
-                                <a class="btn btn-link" href="">Contact Us</a>
-                                <a class="btn btn-link" href="">Privacy Policy</a>
-                                <a class="btn btn-link" href="">Terms & Condition</a>
-                                <a class="btn btn-link" href="">Support</a>
-                            </div>
-                            <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="">Food & Restaurant</a>
-                                <a class="btn btn-link" href="">Spa & Fitness</a>
-                                <a class="btn btn-link" href="">Sports & Gaming</a>
-                                <a class="btn btn-link" href="">Event & Party</a>
-                                <a class="btn btn-link" href="">GYM & Yoga</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
